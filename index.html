@@ -1,1 +1,599 @@
-hello.YehJeng
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <title>精品课程首页</title>
+	    <meta name="description" content="精品课">
+	    <meta name="keywords" content="精品课">
+	    <meta name="author" content="name, email@gmail.com">
+	
+	    <!-- 为移动设备添加 viewport -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	    <!-- iOS 图标 -->
+	    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+	
+	    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" >
+	    <link rel="shortcut icon" href="path/to/favicon.ico">
+	    
+	    <!--导入样式-->
+	    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>  
+	    <link href="css/index.css" rel="stylesheet" type="text/css"></link> 
+	</head>
+	<body>
+		<!--顶部logo条-->
+		<div class="index-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<img src="img/headerLogo.jpg" alt="logo" class="img-responsive center-block">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--顶部导航条-->
+		<nav class="navbar-default">
+			<div class="container hidden-xs">
+				<div class="collapse navbar-collapse">
+					<ul class="nav nav-tabs nav-justified nav-font-size">
+						<li class="dropdown">
+							<a href="index.html">课程首页</a>
+						</li>
+						<li class="dropdown">
+							<a href="onTeacher.html">主讲教师</a>
+						</li>
+						<li class="dropdown">
+							<a href="outline.html">教学大纲</a>
+						</li>
+						<li class="dropdown">
+							<a href="video.html">课程视屏</a>
+						</li>
+						<li class="dropdown">
+							<a href="" data-toggle="dropdown">课程资源</a>
+							<ul class="dropdown-menu">
+								<li><a href="declare.html">申报表</a></li>
+								<li><a href="courseware.html">课件</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="dynamic.html">课程动态</a>
+						</li>
+						<li class="dropdown">
+							<a href="contact.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="visible-xs">
+				<div class="row">
+					<!--移动端的登录注册按钮-->
+					<div class="col-xs-8">
+						<button type="button" class="btn btn-primary login-btn" data-toggle="modal" data-target="#login">
+  							<span class="glyphicon glyphicon-user"></span> User
+						</button>
+						<button type="button" class="btn btn-default" data-toggle="modal" data-target="#registered">注册</button>
+					</div>
+					<!--移动端的导航条-->
+					<div class="container col-xs-4">
+						<button class="btn-sm pull-right btn-bg" id="nav-btn">
+							<span class="glyphicon glyphicon-th-list"></span>
+						</button>
+						<div class="navigation" id="nav-dropdown">
+							<ul>
+								<li class="navigation-head" id="nav-head"><a href="#">导航</a></li>
+								<li><a href="#">课程首页</a></li>
+								<li><a href="#">主讲教师</a></li>
+								<li><a href="#">教学大纲</a></li>
+								<li><a href="#">课程视屏</a></li>
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">课程资源<b class="caret"></b></a>
+									<ul class="dropdown-menu nav-son">
+										<li><a href="#">申报表</a></li>
+										<li><a href="#">课件</a></li>
+									</ul>
+								</li>
+								<li><a href="#">课程动态</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--轮播图-->
+		<div class="information lg-img">
+			<div class="container" id="player-bg">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 img-slide">
+						<!--轮播图-->
+						<div id="myCarousel" class="carousel slide">
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="3"></li>
+								<li data-target="#myCarousel" data-slide-to="4"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<a href="#"><img src="img/11.jpg" alt="第一张图"></a>
+								</div>
+								<div class="item">
+									<a href="#"><img src="img/22.jpg" alt="第二张图"></a>
+								</div>
+								<div class="item">
+									<a href="#"><img src="img/33.jpg" alt="第三张图"></a>
+								</div>
+								<div class="item ">
+									<a href="#"><img src="img/44.jpg" alt="第四张图"></a>
+								</div>
+								<div class="item">
+									<a href="#"><img src="img/55.jpg" alt="第五张图"></a>
+								</div>
+							</div>
+							<a href="#myCarousel" data-slide="prev" class="carousel-control left"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a href="#myCarousel" data-slide="next" class="carousel-control right"><span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 new-course
+">
+						<ul class="list-group list-slide img-responsive">
+							<li class="list-group-item new-course-title">
+								<a href="">最新课程</a>
+								<span>
+									<a href="">
+										<span class="glyphicon glyphicon-share-alt"></span>
+										<span>更多</span>
+									</a>
+								</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item hidden-md">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+							<li class="list-group-item hidden-md">
+								<a href="">儿话训练：儿化发音比较</a>
+								<span>2017-12-15</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--搜索和登陆注册-->
+		<div class="information slr-margin">
+			<div class="container">
+				<div class="row">
+					<!--搜索框-->
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+						<div class="row">
+							<div class="col-lg6 col-md-6 col-sm-12 col-xs-12">
+								<form class="bs-example bs-example-form" role="form">
+									<div class="input-group search-type">
+										<span class="input-group-addon">搜索</span>
+										<input type="text" class="form-control">
+										<span class="input-group-addon">
+											<span class="glyphicon glyphicon-search"></span>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--登陆注册-->
+					<div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+						<button type="button" class="btn btn-primary login-btn" data-toggle="modal" data-target="#login">
+  							<span class="glyphicon glyphicon-user"></span> User
+						</button>
+						<button type="button" class="btn btn-default" data-toggle="modal" data-target="#registered">注册</button>
+					</div>
+					<!--登陆的模态框-->
+					<form method="get">
+						<div class="modal fade modal-block" id="login" tabindex="-1">
+							<!--窗口声明-->
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal"><span>&times;</span></button>
+										<h4 class="panel-title">用户登录</h4>
+									</div>
+									<div class="modal-body">
+										<!--账号输入框-->
+										<div class="input-group">
+											<div class="input-group-addon">账号:</div>
+											<input type="name" class="form-control" placeholder="请输入账号" required="required" maxlength="10">
+										</div>
+										<!--密码输入框-->
+										<div class="input-group password">
+											<div class="input-group-addon">密码:</div>
+											<input type="password" class="form-control" placeholder="请输入登录密码" required="required" maxlength="20">
+										</div>
+										<div class="row">
+											<div class="col-md-7 col-sm-7 col-xs-7">
+												<input type="text" class="form-control" placeholder="请输入验证码" required="required" maxlength="4">
+											</div>
+											<div class="col-md-5 col-sm-5 col-xs-5">
+												<span>1234</span>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<input type="submit" class="btn btn-primary sub-input" value="登录">
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!--注册的模态框-->
+					<form method="get">
+						<div class="modal fade modal-block" id="registered" tabindex="-1">
+							<!--窗口声明-->
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal"><span>&times;</span></button>
+										<h4 class="panel-title">用户注册</h4>
+									</div>
+									<div class="modal-body">
+										<!--账号输入框-->
+										<div class="input-group">
+											<div class="input-group-addon">输入账号:</div>
+											<input type="name" class="form-control" placeholder="请输入账号" required="required" maxlength="10">
+										</div>
+										<!--密码输入框-->
+										<div class="input-group password">
+											<div class="input-group-addon">输入密码:</div>
+											<input type="password" class="form-control" placeholder="请输入登录密码" required="required" maxlength="20">
+										</div>
+										<!--确认密码输入框-->
+										<div class="input-group password">
+											<div class="input-group-addon">确认密码:</div>
+											<input type="password" class="form-control" placeholder="请再次输入登录密码" required="required" maxlength="20">
+										</div>
+										<div class="input-group password">
+											<div class="input-group-addon">手机号码:</div>
+											<input type="password" class="form-control" placeholder="请输入手机号码" required="required" maxlength="20">
+										</div>
+										<div class="row">
+											<div class="col-md-7 col-sm-7 col-xs-7">
+												<input type="text" class="form-control" placeholder="请输入验证码" required="required" maxlength="4">
+											</div>
+											<div class="col-md-5 col-sm-5 col-xs-5">
+												<span>1234</span>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<input type="submit" class="btn btn-primary sub-input" value="注册">
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--精品课程内容-->
+		<div class="information">
+			<div class="container jpk">
+				<a href="" class="jpk-title">精品课程</a>
+				<a href="" class="jpk-more badge">更多</a>
+			</div>
+		</div>
+		<div class="information">
+			<div class="container">
+				<div class="row">
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--数据结构课程设计-->
+					<div class="container col-lg-3 col-md-3 col-sm-6 col-xs-12 jpk-course">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-5">
+								<img src="img/01.jpg" alt="" class="img-responsive jpk-course-img">
+							</div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-7">
+								<ul>
+									<li>
+										<a href="" class="jpk-course-title">数据结构课程设计</a>
+										<span class="glyphicon glyphicon-fire jpk-course-hot"></span>
+									</li>
+									<li><a class="jpk-course-teacher">任小龙</a></li>
+									<li>
+										<span class="label label-success">实战</span>
+										<span class="label label-success">C语言</span>
+										<span class="label label-success">中级</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--课程动态和嘉园时讯-->
+		<div class="information dn-bg">
+			<div class="container">
+				<div class="row">
+					<!--课程动态-->
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 none-pad">
+						<div class="dynamic">
+							<a href="" class="dynamic-title">课程动态</a>
+						</div>
+						<ul class="dynamic-list">
+							<li>
+								<a href="">书写工具的选择与使用</a>
+								<span>2017-12-26</span>
+							</li>
+							<li>
+								<a href="">书法教学中的线条训练</a>
+								<span>2017-12-26</span>
+							</li>
+							<li>
+								<a href="">精品开放课程中期检查评审意见汇总表</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">课程教学大纲 考试大纲 期末考试题集</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">中国书法简史</a>
+								<span>2017-12-15</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 none-pad">
+						<div class="news">
+							<a href="" class="news-title">课程动态</a>
+						</div>
+						<ul class="news-list">
+							<li>
+								<a href="">我校举行本科教学工作审核评估......</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">2017年新加坡、马来西亚“中国寻......</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">我校成功举办第二届创业大赛活动</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">“全球客家移民与地域社会发展......</a>
+								<span>2017-12-15</span>
+							</li>
+							<li>
+								<a href="">我校学子在全国师范院校师范生教.....</a>
+								<span>2017-12-15</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--主讲教师-->
+		<div class="information">
+			<div class="container st">
+				<a href="" class="st-title">主讲教师</a>
+				<a href="" class="st-more badge">更多</a>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 st-son">
+								<img src="img/tec1.png" class="img-responsive">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+								<ul class="st-inf">
+									<li>姓名：吕建国</li>
+									<li>学位：学士</li>
+									<li>职称：教授</li>
+									<li>职务：主任</li>
+									<li>院系：教师职业技能部</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 st-son">
+								<img src="img/tec2.png" class="img-responsive">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+								<ul class="st-inf">
+									<li>姓名：钱书新</li>
+									<li>学位：硕士</li>
+									<li>职称：副教授</li>
+									<li>职务：教师</li>
+									<li>院系：教师职业技能教学部</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 st-son">
+								<img src="img/tec3.jpg" class="img-responsive">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+								<ul class="st-inf">
+									<li>姓名：姬凤霞</li>
+									<li>学位：硕士</li>
+									<li>职称：副教授</li>
+									<li>职务：教师</li>
+									<li>院系：教师职业技能教学部</li>	
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<!--尾部-->
+		<footer id="footer" class="text-muted">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fot-copyright">
+						<span>
+							嘉应学院 © 2018
+						</span>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fot-address">
+						<span>
+							地址：广东省梅州市梅松路  Power by Wirkus CMS 1.5.1
+						</span>
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</body>
+	<script src="js/index.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<html>
